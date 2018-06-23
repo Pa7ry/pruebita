@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-navbar color='primary'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Inicio</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-list  id='login'>
+
+    <ion-item>
+      <ion-label floating>Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]=user name='user' (keyup)='access(user)'></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]=pass name='pass' (keyup)='access(pass)'></ion-input>
+    </ion-item>
+
+    <button ion-button block id='boton' disabled color='secondary' (click)='see()'>Entrar</button>
+  
+  </ion-list>
+
+
+  <ion-slides pager class='hide' id='slides'>
+
+    <ion-slide>
+      <h2>Aunque parezca un poco tonta...</h2>
+      <img src='../../assets/imgs/tonta.jpg'/>
+    </ion-slide>
+  
+    <ion-slide>
+      <h2>...hay cosas que tengo muy claras...</h2>
+    </ion-slide>
+  
+    <ion-slide>
+      <h2>...como lo bien que nos los pasamos juntos...</h2>
+      <img src='./../../assets/imgs/diver.jpg' />
+    </ion-slide>
+
+    <ion-slide>
+        <h2>...lo mucho que te quiero...</h2>
+        <img src='./../../assets/imgs/love.jpg' />
+    </ion-slide>
+
+    <ion-slide>
+        <h2>...lo muuuucho que nos queremos...</h2>
+        <img src='./../../assets/imgs/amor.jpg' />
+    </ion-slide>
+
+    <ion-slide>
+        <h2>...y que aunque estemos horrorosos...</h2>
+    </ion-slide>
+
+    <ion-slide>
+        <img src='./../../assets/imgs/feos.jpg' />
+    </ion-slide>
+
+    <ion-slide>
+        <h2>...SIEMPRE TE AMARÉ.</h2>
+        <img src='./../../assets/imgs/corazon.jpg' />
+    </ion-slide>
+
+    <ion-slide>
+        
+    </ion-slide>
+  
+  </ion-slides>
+</ion-content>
