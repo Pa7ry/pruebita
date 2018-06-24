@@ -15,7 +15,9 @@
              <h3>{{ this.day.day }}</h3>
             </ion-item>
             <ion-item-options>
-            <button ion-button (click)="girar(i)">Voltear</button>
+            <button ion-button icon-start (click)="girar(i)">Voltear
+                <ion-icon name="swap"></ion-icon>
+            </button>
             </ion-item-options>
         </ion-item-sliding>
     </ion-list>
