@@ -21,7 +21,7 @@ export class HomePage {
     console.log(this.pass);
     let boton = document.getElementById('boton');
     if (this.user == 'Gianmarco' && this.pass == '4mesesdeinfinitos') {
-      boton.disabled = false;
+      boton.removeAttribute('disabled');
     }
   }
 
