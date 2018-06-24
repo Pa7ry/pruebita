@@ -11,7 +11,7 @@ export class HomePage {
 
   user: string;
   pass: string;
-
+  s
   constructor(public navCtrl: NavController,
               public toastCtrl: ToastController) {
 

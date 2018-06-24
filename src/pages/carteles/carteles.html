@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-navbar color='light'>
+        <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Calendario mayo/junio</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list>
+        <ion-item-sliding #item *ngFor='let day of month; let i = index'>
+            <ion-item>
+             <h3>{{ this.day.day }}</h3>
+            </ion-item>
+            <ion-item-options>
+            <button ion-button (click)="girar(i)">Voltear</button>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+
+</ion-content>

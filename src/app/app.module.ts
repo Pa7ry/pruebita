@@ -5,15 +5,19 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { CartelesPage } from '../pages/carteles/carteles';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
+import { MonthService } from './../assets/service/month.service';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    CartelesPage
   ],
   imports: [
     BrowserModule,
@@ -23,11 +27,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    CartelesPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    MonthService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
