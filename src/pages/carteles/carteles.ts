@@ -30,7 +30,7 @@ export class CartelesPage {
 			palabra.className = 'hide';
 			dia.className = '';
 			vuelto = false;
-		} else {
+		} else if (vuelto == false) {
 			dia.className = 'hide';
 			palabra.className = '';
 			vuelto = true;
