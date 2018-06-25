@@ -10,6 +10,7 @@ import { MonthService, Month } from './../../assets/service/month.service';
 export class CartelesPage {
 
     month: Month[];
+	vuelto: boolean = false;
 
     constructor(public navCtrl: NavController,
                 private _monthService: MonthService) {
@@ -21,8 +22,17 @@ export class CartelesPage {
         this.month = this._monthService.getMonth();
     }
 
-    girar(i) {
-        console.log(this.month[i])
+    girar(vuelto) {
+		let dia = document.getElementById('dia');
+		let palabra = document.getElementById('palabra');
+        
+		if (vuelto = false) {
+			palabra.className = 'hide';
+			dia.className = '';
+		} else {
+			dia.className = 'hide';
+			palabra.className = '';
+		}
     }
 
  
