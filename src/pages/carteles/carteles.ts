@@ -26,12 +26,14 @@ export class CartelesPage {
 		let dia = document.getElementById('dia');
 		let palabra = document.getElementById('palabra');
         
-		if (vuelto = false) {
+		if (vuelto == false) {
 			palabra.className = 'hide';
 			dia.className = '';
+			return vuelto = true;
 		} else {
 			dia.className = 'hide';
 			palabra.className = '';
+			return vuelto = false;
 		}
     }
 

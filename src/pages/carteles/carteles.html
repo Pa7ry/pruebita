@@ -9,18 +9,18 @@
 
 <ion-content>
 
-    <ion-grid>
-        <ion-row #item *ngFor='let day of month; let i = index'> 
-            <ion-col (click)="girar()">
+    <ion-list>
+        <ion-item-sliding #item *ngFor='let day of month; let i = index'>
+            <ion-item>
              <h3 #dia>{{ this.day.day }}</h3>
 			 <h3 #palabra>{{ this.day.word }}</h3>
-            </ion-col>
-            <ion-row>			
-            <!-- <button ion-button icon-start (click)="girar(i)">Voltear
+            </ion-item>
+            <ion-item-options>
+            <button ion-button icon-start (click)="girar()">Voltear
                 <ion-icon name="swap"></ion-icon>
             </button>
-            </ion-item-options> 
-        </ion-item-sliding> -->
-    </ion-grid>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
 
 </ion-content>
