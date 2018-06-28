@@ -20,7 +20,10 @@ export class ListPage {
     } else {
     secreto.className = 'hide';
     }
-  
+  }
+
+  holi() {
+    document.getElementById('yop').className = '';
   }
 
 }

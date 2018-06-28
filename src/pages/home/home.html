@@ -8,25 +8,8 @@
 </ion-header>
 
 <ion-content>
-  
-  <ion-list  id='login'>
 
-    <ion-item>
-      <ion-label floating>Nombre</ion-label>
-      <ion-input type="text" [(ngModel)]=user name='user' (keyup)='access(user)'></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label floating>Contraseña</ion-label>
-      <ion-input type="password" [(ngModel)]=pass name='pass' (keyup)='access(pass)'></ion-input>
-    </ion-item>
-
-    <button ion-button block id='boton' disabled color='secondary' (click)='see()'>Entrar</button>
-  
-  </ion-list>
-
-
-  <ion-slides pager class='hide' id='slides'>
+  <ion-slides pager>
 
     <ion-slide>
       <h2>Aunque parezca un poco tonta...</h2>
@@ -63,10 +46,6 @@
     <ion-slide>
         <h2>...SIEMPRE TE AMARÉ.</h2>
         <img src='./../../assets/imgs/corazon.jpg' />
-    </ion-slide>
-
-    <ion-slide>
-        
     </ion-slide>
   
   </ion-slides>

@@ -1,0 +1,36 @@
+page-login {
+    .hide {
+        display: none;
+    }
+    .scroll-content {
+        overflow: hidden;
+
+        img {
+            margin-top: 25px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        #log {    
+            height: 100%;
+            img, h3 {
+                margin-left: 15px;
+            }
+
+            h3 {
+                color: #03DAC6;
+            }
+        }
+
+        #welcome {
+            height: 100%;
+
+            img {
+                margin-top: 50%;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,51 @@
+<ion-header id='menu' class='hide'>
+    <ion-navbar color='primary'>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Bienvenido</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+
+    <div id='log'>
+
+      <img src='./../../assets/imgs/welcome.gif' />
+
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+      <h3 id='color'>Por favor, introduce tus datos:</h3>
+      
+      <ion-list>
+
+        <ion-item>
+          <ion-label floating>Nombre</ion-label>
+          <ion-input type="text" [(ngModel)]=user name='user' (keyup)='access(user)'></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>Contraseña</ion-label>
+          <ion-input type="password" [(ngModel)]=pass name='pass' (keyup)='access(pass)'></ion-input>
+        </ion-item>
+    
+        <button ion-button block id='boton' disabled color='secondary' (click)='login()'>Entrar</button>
+      
+      </ion-list>
+    
+    </div>
+
+    <div id='welcome' class='hide'>
+
+      <img src='./../../assets/imgs/bienvenido.png' />
+
+      <h3>Aquí encontrarás todo tipo de cosas bonitas para alegrarte el día.</h3>
+
+      <h3>Espero que te guste.</h3>
+
+    </div>
+
+</ion-content>

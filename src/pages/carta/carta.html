@@ -1,0 +1,79 @@
+<ion-header>
+    <ion-navbar color='primary'>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Carta</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+
+    <ion-list  id='secret'>
+
+        <ion-item>
+            <ion-label floating>Nombre</ion-label>
+            <ion-input type="text" [(ngModel)]=user name='user' (keyup)='access(user)'></ion-input>
+        </ion-item>
+        
+        <ion-item>
+            <ion-label floating>Contraseña</ion-label>
+            <ion-input type="password" [(ngModel)]=pass name='pass' (keyup)='access(pass)'></ion-input>
+        </ion-item>
+
+        <button ion-button block id='btn' disabled color='secondary' (click)='see()'>Sorpresa</button>
+        
+    </ion-list>
+            
+
+    <div id='carta' class='hide'>
+        <p>Mi vida,</p>
+        <p>no te haces a la idea de cuantísimo puedo llegar a quererte. No me la suda todo como tú dices, puede parecer que sí, pero porque
+        aunque tenga 25 años, para otras cosas me siento como una niña pequeña que no sabe qué hacer... sé que es muy triste esto y dudo
+        que te guste. No sé, últimamente, pienso que por la situación con mis padres y el ambiente familiar en el que he crecido me han 
+        hecho ser así. De pequeña nadie me enseñó a hablar de mis emociones, nadie me peguntaba sobre ellas, quizá no sentía que tenñia la
+        suficiente atención por parte de mis padres ni el suficiente cariño (con esto no quiero decir que no me quisieran ni me cuidaran
+        lo mejor que pudieran). Esto me ha hecho crecer, pero seguir siendo como una niña de 10 años en muchos aspectos, como puede ser el
+        evitar conflictos y la falta de habilidades que tengo para enfrentarme a ellos (también creo que esto es un motivo por el que a 
+        veces no cuento las cosas), como puede ser también lo que me cuesta hablar de lo que siento, ya que aprendí a tragarme todo yo sola,
+        y como puede ser también la necesidad que tengo de cariño y aprobación (lo cual no significa que no sepa distinguir entre cariño
+        y amor).</p>
+        <p>Absolutamente todo lo que te he dicho que siento por ti y que quiero contigo es cierto. Jamás se me ocurriría jugar así con las
+        ilusiones de nadie, sobre todo, porque yo soy la primera que se hace ilusiones. Sé que podemos llegar a estar increíblemente
+        bien, como hemos estado otras veces, porque sé que nos complementeamos de maravilla, nos los pasamos muy bien juntos y nos amamos
+        con locura desde el principio. Lo nuestro puede llegar a ser una de esas historias de amor dignas de contar a los nietos como algo
+        bellos y que le desearías a cualquier persona querida.</p>
+        <p>No quiero perderte nunca, tampoco quiero seguir sufriendo. Solo quiero que llegue la noche, nos tumbemos en la cama y durmamos
+        abrazados tranquilamente, eso es todo lo que quiero. Hoy hablando con mis amigas, cotilleando un poco, solo pensaba y me imaginaba
+        a nosotros, que tu me hicieras una pedida de mano como a Mandy le hizo su novio, hablar de ti como de mi prometido y casarnos en 
+        Venezuela por todo lo alto, como nos contó Elías. Pienso en todo eso y no puedo evitar sonreír.</p>
+        <p>Mi amor, quiero estar <b>contigo toda mi vida, hasta el últmo de mis días.</b></p>
+    </div>
+
+    <ion-item id='level' class='hide' min="0" max="100">
+        <ion-range [(ngModel)]="amor" (click)='loveyou(amor)' color='danger'>
+            <ion-icon range-left name="heart-outline"></ion-icon>
+            <ion-icon range-right name="heart"></ion-icon>
+        </ion-range>
+    </ion-item>
+
+
+    <ion-list radio-group id='decision'class='hide'>
+        <ion-list-header>
+            ¿Quieres estar conmigo 4 ever and ever?
+        </ion-list-header>
+      
+        <ion-item>
+          <ion-label>Sí</ion-label>
+          <ion-radio checked="true" value="si"></ion-radio>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio value="no"></ion-radio>
+        </ion-item>
+
+      </ion-list>
+
+  </ion-content>
+  

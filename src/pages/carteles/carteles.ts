@@ -22,7 +22,7 @@ export class CartelesPage {
     }
 
     girar(i) {
-        console.log(this.month[i])
+        console.log(this.month[i].word);
     }
 
  
