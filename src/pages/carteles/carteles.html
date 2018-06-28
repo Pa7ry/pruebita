@@ -12,10 +12,11 @@
     <ion-list>
         <ion-item-sliding #item *ngFor='let day of month; let i = index'>
             <ion-item>
-             <h3>{{ this.day.day }}</h3>
+             <h3 #dia>{{ this.day.day }}</h3>
+			 <h3 #palabra class='hide'>{{ this.day.word }}</h3>
             </ion-item>
             <ion-item-options>
-            <button ion-button icon-start (click)="girar(i)">Voltear
+            <button ion-button icon-start (click)="girar(vuelto)">Voltear
                 <ion-icon name="swap"></ion-icon>
             </button>
             </ion-item-options>
