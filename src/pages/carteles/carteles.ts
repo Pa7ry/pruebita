@@ -10,31 +10,21 @@ import { MonthService, Month } from './../../assets/service/month.service';
 export class CartelesPage {
 
     month: Month[];
-	vuelto: boolean = false;
+	vuelto: boolean;
 
     constructor(public navCtrl: NavController,
                 private _monthService: MonthService) {
 
     }
 
-    ngOnInit() {
+    ngOnInit(vuelto) {
 
         this.month = this._monthService.getMonth();
+        console.log(this.vuelto);
     }
 
-    girar(vuelto) {
-		let dia = document.getElementById('dia');
-		let palabra = document.getElementById('palabra');
-        
-		if (vuelto == true) {
-			palabra.className = 'hide';
-			dia.className = '';
-			vuelto = false;
-		} else if (vuelto == false) {
-			dia.className = 'hide';
-			palabra.className = '';
-			vuelto = true;
-		}
+    girar(vuelto) {  
+        this.vuelto = true;
     }
 
  
