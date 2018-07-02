@@ -8,6 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { CartelesPage } from '../pages/carteles/carteles';
 import { CartaPage } from './../pages/carta/carta';
+import { DietaPage } from './../pages/dieta/dieta';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,7 +22,8 @@ import { MonthService } from './../assets/service/month.service';
     ListPage,
     CartelesPage,
     CartaPage,
-    LoginPage
+    LoginPage,
+    DietaPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { MonthService } from './../assets/service/month.service';
     ListPage,
     CartelesPage,
     CartaPage,
-    LoginPage
+    LoginPage,
+    DietaPage 
   ],
   providers: [
     StatusBar,
